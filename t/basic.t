@@ -1,9 +1,11 @@
 use Test::More tests => 18;
 use Test::Exception;
+use warnings;
 
 use X11::Wallpaper qw(set_wallpaper set_wallpaper_command);
 
 # Fake which commands are available
+no warnings 'redefine';
 my @available;
 *{'X11::Wallpaper::which'} = sub {
     for my $cmd (@available) {
