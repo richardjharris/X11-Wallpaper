@@ -177,7 +177,7 @@ sub _find_setter_args {
 
 __END__
 
-=head1 SYNOPIS
+=head1 SYNOPSIS
 
   use X11::Wallpaper qw(set_wallpaper);
   set_wallpaper( "./foo.jpg", {
